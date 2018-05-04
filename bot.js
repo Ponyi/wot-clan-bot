@@ -20,7 +20,7 @@ client.on('guildMemberAdd', guildMember => {
 
 client.login('NDM5MDMyMTU3MDg0ODQ0MDUy.DcSvlw.ptF9yd79-1DsHx1CmS4dd9SnBns');
 
-const http = require('https');
+const http = require('http');
 
 const hostname = process.env.HOST;//'discord-wot-clan-bot.herokuapp.com';
 const port = process.env.PORT || 5000;
