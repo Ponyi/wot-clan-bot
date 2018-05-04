@@ -22,8 +22,8 @@ client.login('NDM5MDMyMTU3MDg0ODQ0MDUy.DcSvlw.ptF9yd79-1DsHx1CmS4dd9SnBns');
 
 const http = require('http');
 
-const hostname = '127.0.0.1';
-const port = 80;
+const hostname = '0.0.0.0';
+const port = process.env.PORT || 5000;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
