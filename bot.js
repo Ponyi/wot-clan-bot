@@ -22,7 +22,7 @@ client.login('NDM5MDMyMTU3MDg0ODQ0MDUy.DcSvlw.ptF9yd79-1DsHx1CmS4dd9SnBns');
 
 const http = require('http');
 
-const hostname = '0.0.0.0';
+const hostname = 'discord-wot-clan-bot.herokuapp.com';
 const port = process.env.PORT || 5000;
 
 const server = http.createServer((req, res) => {
