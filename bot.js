@@ -23,7 +23,7 @@ client.login('NDM5MDMyMTU3MDg0ODQ0MDUy.DcSvlw.ptF9yd79-1DsHx1CmS4dd9SnBns');
 const http = require('http');
 
 const hostname = '127.0.0.1';
-const port = 3000;
+const port = 80;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
@@ -33,6 +33,10 @@ const server = http.createServer((req, res) => {
   // res.end('Hello World\n');
 });
 
-server.listen(port, hostname, () => {
+// server.listen(port, hostname, () => {
+//   console.log(`Server running at http://${hostname}:${port}/`);
+// });
+
+server.listen(() => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
