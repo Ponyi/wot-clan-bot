@@ -28,9 +28,13 @@ const port = process.env.PORT || 5000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.write(`Logged in as ${client.user.tag} to ${client.guilds.first().name}`);
-  res.end(`Last message was:  ${client.user.lastMessage.content} on ${client.user.lastMessage.createdTimestamp}`);
-  // res.end('Hello World\n');
+  res.write(`Logged in as ${client.user.tag} to ${client.guilds.first().name}\n`);
+  if (client.user.lastMessage != null)
+  {
+    client.user.lastMessage.
+    res.write(`Last message was:  ${client.user.lastMessage} on ${client.user.lastMessage.createdTimestamp}`);
+  }
+  res.end('\nwot-clan-bot\n');
 });
 
 server.listen(port, hostname, () => {
