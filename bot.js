@@ -29,9 +29,7 @@ const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
   res.write(`Logged in as ${client.user.tag} to ${client.guilds.first().name}\n`);
-  if (client.user.lastMessage != null)
-  {
-    client.user.lastMessage.
+  if (client.user.lastMessage != null) {
     res.write(`Last message was:  ${client.user.lastMessage} on ${client.user.lastMessage.createdTimestamp}`);
   }
   res.end('\nwot-clan-bot\n');
